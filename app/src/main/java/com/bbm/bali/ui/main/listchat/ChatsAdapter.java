@@ -73,13 +73,13 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatsHolder>{
     @Override
     public void onBindViewHolder(ChatsHolder holder, int position) {
         final Chat chat = chatList.get(position);
-     //   holder.avatarView.setImageResource(chat.getAvatar());
+        holder.avatarView.setImageResource(chat.getAvatar());
         holder.listName.setText(chat.getNama());
         holder.listChat.setText(chat.getChat());
 
-        Bitmap srcBitmap = BitmapFactory.decodeResource(ctx.getResources(), chat.getAvatar());
-        holder.avatarView.setImageBitmap(srcBitmap);
-        circularImage(holder.avatarView, srcBitmap);
+     //   Bitmap srcBitmap = BitmapFactory.decodeResource(ctx.getResources(), chat.getAvatar());
+     //   holder.avatarView.setImageBitmap(srcBitmap);
+     //   circularImage(holder.avatarView, srcBitmap);
     }
 
     @Override
