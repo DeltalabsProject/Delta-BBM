@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_nav_contacts"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_drawer_invite"
+            android:title="Invite" />
+        <item
+            android:id="@+id/nav_channel"
+            android:icon="@drawable/ic_drawer_channels"
+            android:title="Channels" />
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_drawer_scan"
+            android:title="Scan Barcode" />
+
+    </group>
+
+    <group
+        android:id="@+id/bottomGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="DELTA Settings" />
+
+        <item
+            android:id="@+id/nav_deltachannel"
+            android:icon="@drawable/ic_info"
+            android:title="DELTALABS Channel" />
+
+    </group>
+
+</menu>

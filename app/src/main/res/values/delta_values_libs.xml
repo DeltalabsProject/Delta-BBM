@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbar_theme" format="reference" />
+    <attr name="toolbar_popup_theme" format="reference" />
+
+    <dimen name="toolbar_elevation">3dp</dimen>
+</resources>

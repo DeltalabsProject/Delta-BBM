@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Delta BBM</string>
+    <string name="drawer_close">Close nav drawer</string>
+    <string name="drawer_open">Open nav drawer</string>
+</resources>
