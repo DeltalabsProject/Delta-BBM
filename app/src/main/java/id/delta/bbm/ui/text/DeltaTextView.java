@@ -31,6 +31,9 @@ public class DeltaTextView extends TextView {
     }
 
     private void initText(){
+        setTextSize(TextUtils.setUkuranDateView());
+        setTypeface(null, TextUtils.setTypeFaceRead());
+        setTextColor(TextUtils.setDateTextColor());
         setInlineText();
         textTanggal();
     }
