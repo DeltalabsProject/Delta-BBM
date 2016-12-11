@@ -78,7 +78,7 @@ public class FragmentChat extends h {
         };
 
         String nama[]={"Alvaro","Anca Imut","Andy Xialm","Ciben","Dhian Rusdhiana","Darwandi","Flavioarfaria","Irule","Jgilfet","JQ","Keysa","Lopes","Trangga Ken"};
-        String chat= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique est eget rutrum auctor.";
+        String chat= getString(R.string.chats);
 
         for (int i=0; i<avatar.length;i++){
             chats = new Chat();

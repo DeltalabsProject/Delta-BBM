@@ -1,13 +1,11 @@
 package com.bbm.ui.activities;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -17,7 +15,7 @@ import com.bbm.bali.ui.main.a.e;
 import com.bbm.bali.ui.main.fragment.MainAdapter;
 
 import id.delta.bbm.R;
-import id.delta.bbm.activities.SettingsActivity;
+import id.delta.bbm.activities.tab.SettingsActivity;
 
 
 public class MainActivity extends e implements NavigationView.OnNavigationItemSelectedListener{
