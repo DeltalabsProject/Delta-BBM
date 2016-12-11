@@ -7,4 +7,6 @@ package id.delta.bbm.utils.theme;
 public class ThemeManager {
 
     private ThemeManager(){}
+
+
 }

@@ -33,7 +33,7 @@
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
-                <TextView
+                <com.bbm.ui.InlineImageTextView
                     android:textSize="15sp"
                     android:id="@+id/list_nama"
                     android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                     android:text="Nama"
                     android:textStyle="bold" />
 
-                <TextView
+                <com.bbm.ui.InlineImageTextView
                     android:textSize="14sp"
                     android:id="@+id/list_chat"
                     android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
 
             </LinearLayout>
 
-            <TextView
+            <id.delta.bbm.ui.text.DeltaTextView
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

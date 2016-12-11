@@ -2,6 +2,6 @@
 <resources>
     <attr name="toolbar_theme" format="reference" />
     <attr name="toolbar_popup_theme" format="reference" />
-
     <dimen name="toolbar_elevation">3dp</dimen>
+    <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
 </resources>
