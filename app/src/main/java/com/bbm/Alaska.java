@@ -2,8 +2,12 @@ package com.bbm;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.multidex.MultiDexApplication;
+
+import id.delta.bbm.bahasa.Bahasa;
+import id.delta.bbm.utils.preference.PreferenceKeys;
 
 /**
  * Created by DELTALABS on 12/9/16.
@@ -31,11 +35,20 @@ public class Alaska extends MultiDexApplication {
 
             @Override
             public void run() {
+                //Fitur Bahasa
+                Bahasa.init(Alaska.this, PreferenceKeys.KEY_BAHASA);
 
                 registerActivityLifecycleCallbacks(CALLBACKS);
 
             }
         }.run();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        //Fitur Bahasa
+        Bahasa.init(this, PreferenceKeys.KEY_BAHASA);
     }
 
     private static final ActivityLifecycleCallbacks CALLBACKS = new ActivityLifecycleCallbacks() {
