@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Delta BBM</string>
-    <string name="drawer_close">Close nav drawer</string>
-    <string name="drawer_open">Open nav drawer</string>
+    <string name="drawer_close" translatable="false">Close nav drawer</string>
+    <string name="drawer_open" translatable="false">Open nav drawer</string>
+
+    <string name="chats">One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen</string>
 </resources>
