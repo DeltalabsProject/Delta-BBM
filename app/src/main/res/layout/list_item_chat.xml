@@ -35,7 +35,7 @@
 
                 <com.bbm.ui.InlineImageTextView
                     android:textSize="15sp"
-                    android:id="@+id/list_nama"
+                    android:id="@+id/chat_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
@@ -44,7 +44,7 @@
 
                 <com.bbm.ui.InlineImageTextView
                     android:textSize="14sp"
-                    android:id="@+id/list_chat"
+                    android:id="@+id/chat_message"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="status" />
@@ -52,6 +52,7 @@
             </LinearLayout>
 
             <id.delta.bbm.ui.text.DeltaTextView
+                android:id="@+id/date"
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +65,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@android:color/darker_gray"
+            android:background="?android:listDivider"
             android:paddingLeft="20sp" />
     </LinearLayout>
 

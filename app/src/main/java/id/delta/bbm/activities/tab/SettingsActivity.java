@@ -1,11 +1,15 @@
 package id.delta.bbm.activities.tab;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
+import android.support.v4.graphics.ColorUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -37,15 +41,15 @@ public class SettingsActivity extends e {
         //ViewPager
         ViewPager mPager = (ViewPager) findViewById(PreferenceUtils.getID("pager","id"));
         mPager.setAdapter(new SettingsAdapter(getSupportFragmentManager()));
-        mPager.setOffscreenPageLimit(3);
+        mPager.setOffscreenPageLimit(8);
 
         //TabLayout
         TabLayout tabs = (TabLayout) findViewById(PreferenceUtils.getID("tabs","id"));
         tabs.setupWithViewPager(mPager);
-        //   tabs.setSelectedTabIndicatorColor(PreferenceUtils.setWarnaAksen(this));
+        tabs.setSelectedTabIndicatorColor(ColorManager.warnaStatus);
 
         //Coloring with Key
-        LinearLayout linearLayout = (LinearLayout)findViewById(R.id.linearlayout);
+        LinearLayout linearLayout = (LinearLayout)findViewById(PreferenceUtils.getID("linearlayout","id"));
         linearLayout.setBackgroundColor(ColorManager.setWarnaPrimer());
 
         //Coloring StatusBar Lolipop Up
@@ -54,5 +58,36 @@ public class SettingsActivity extends e {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(ColorManager.setWarnaPrimer());
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(PreferenceUtils.getID("delta_menu_settings", "menu"), menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == PreferenceUtils.getID("about", "id")) {
+           // DialogUtils.showDialogAbout(this);
+            return true;
+        } else if (item.getItemId() == PreferenceUtils.getID("donate", "id")) {
+           // DialogUtils.showDialogDonasi(this);
+            return true;
+        } else if (item.getItemId() == PreferenceUtils.getID("report", "id")) {
+           // deltaReport();
+            return true;
+        } else if (item.getItemId() == PreferenceUtils.getID("share", "id")) {
+           // deltaShare();
+            return true;
+        }else if (item.getItemId() == PreferenceUtils.getID("contributor", "id")) {
+          //  startActivity(new Intent(SettingsActivity.this, ContributorActivity.class));
+            return true;
+        }else if (item.getItemId() == PreferenceUtils.getID("restart", "id")) {
+            PreferenceUtils.restartApp();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

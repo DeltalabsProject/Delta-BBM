@@ -5,4 +5,7 @@
 
     <string name="chats">One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen</string>
     <string name="packageName" translatable="false">id.delta.bbm</string>
+    <string name="pref_title_theme">Change Theme</string>
+    <string name="pref_title_textstyle">Change Text Style</string>
+    <string name="pref_title_bahasa">Change Language</string>
 </resources>

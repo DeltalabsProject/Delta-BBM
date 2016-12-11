@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:layout="@layout/delta_preference"
+        android:entries="@array/typeface_labels"
+        android:entryValues="@array/typeface_values"
+        android:title="@string/pref_title_textstyle"
+        android:summary="%s"
+        android:key="key_delta_bold"
+        android:defaultValue="0"/>
+
+</PreferenceScreen>

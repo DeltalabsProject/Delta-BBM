@@ -20,7 +20,7 @@ public class ChatsHolder extends RecyclerView.ViewHolder {
     public ChatsHolder(View itemView) {
         super(itemView);
         avatarView = (ImageView) itemView.findViewById(R.id.avatar_view);
-        listName = (TextView) itemView.findViewById(R.id.list_nama);
-        listChat = (TextView) itemView.findViewById(R.id.list_chat);
+        listName = (TextView) itemView.findViewById(R.id.chat_title);
+        listChat = (TextView) itemView.findViewById(R.id.chat_message);
     }
 }

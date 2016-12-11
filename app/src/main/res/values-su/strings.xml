@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Delta BBM</string>
     <string name="chats">Hiji duat tilu opat lima genep tujuh dalapan salapan sapuluh sabelas dua belas tilu belas opat belas lima belas\"\"</string>
+    <string name="pref_title_bahasa">Gentos Nalika</string>
+    <string name="pref_title_textstyle">Gentos Wangun Seratan</string>
+    <string name="pref_title_theme">Gentos Tema</string>
 </resources>

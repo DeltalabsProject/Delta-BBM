@@ -28,8 +28,14 @@ public class ColorManager {
 
     // Warna aplikasi
     private static int warnaDefaultPrimer = 0xff0092cc;
+    private static int warnaDefaultAksen = 0xff006064;
+
     public static int setWarnaPrimer(){
         return PreferenceUtils.getInt(PreferenceKeys.KEY_PRIMER, warnaDefaultPrimer);
+    }
+
+    public static int setWarnaAksen(){
+        return PreferenceUtils.getInt(PreferenceKeys.KEY_ACCENT, warnaDefaultAksen);
     }
 
 }

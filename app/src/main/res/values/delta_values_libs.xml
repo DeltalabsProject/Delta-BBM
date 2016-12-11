@@ -4,4 +4,63 @@
     <attr name="toolbar_popup_theme" format="reference" />
     <dimen name="toolbar_elevation">3dp</dimen>
     <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
+
+    <!--Warna-->
+    <color name="delta_amoled_dark">#ff212121</color>
+    <color name="delta_red">#f44336</color>
+    <color name="delta_pink">#E91E63</color>
+    <color name="delta_purple">#9C27B0</color>
+    <color name="delta_deeppurple">#673AB7</color>
+    <color name="delta_indigo">#3F51B5</color>
+    <color name="delta_blue">#2196F3</color>
+    <color name="delta_cyan">#00BCD4</color>
+    <color name="delta_teal">#ff009688</color>
+    <color name="delta_green">#4CAF50</color>
+    <color name="delta_lightgreen">#8BC34A</color>
+    <color name="delta_lime">#CDDC39</color>
+    <color name="delta_yellow">#ffeb3b</color>
+    <color name="delta_amber">#FFC107</color>
+    <color name="delta_orange">#FF9800</color>
+    <color name="delta_deeporange">#FF5722</color>
+    <color name="delta_brown">#795548</color>
+    <color name="delta_grey">#9E9E9E</color>
+    <color name="delta_bluegrey">#607D8B</color>
+    <color name="delta_black">#ff000000</color>
+    <color name="delta_white">#FFFFFF</color>
+    <color name="delta_dialog">#ff424242</color>
+    <color name="delta_bg">#00000000</color>
+    <color name="delta_window">#80000000</color>
+
+    <!--Tema-->
+    <string-array name="theme_labels">
+        <item>Light Theme</item>
+        <item>Dark Theme</item>
+        <item>Dark Theme (Non Amoled Device)</item>
+        <item>Transparent Theme</item>
+        <item>Black Theme</item>
+        <item>Sailfish</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Typeface -->
+    <string-array name="typeface_labels">
+        <item>Normal</item>
+        <item>Italic</item>
+        <item>Bold</item>
+        <item>Bold Italic</item>
+    </string-array>
+    <string-array name="typeface_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>

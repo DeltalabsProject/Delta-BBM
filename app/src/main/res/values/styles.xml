@@ -1,11 +1,51 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="BBMAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
 
+    <style name="Delta.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat</item>
+    </style>
+
+    <style name="Delta.Dark.NonAmoled" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowBackground">@color/delta_amoled_dark</item>
+    </style>
+
+    <style name="Delta.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowBackground">@color/delta_window</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <style name="Delta.Black" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowBackground">@color/delta_black</item>
+    </style>
+
+    <style name="Delta.Sailfish" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_popup_theme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowBackground">@drawable/irulepatern</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
 </resources>

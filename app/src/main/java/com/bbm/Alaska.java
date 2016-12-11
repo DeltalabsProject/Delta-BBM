@@ -8,6 +8,7 @@ import android.support.multidex.MultiDexApplication;
 
 import id.delta.bbm.bahasa.Bahasa;
 import id.delta.bbm.utils.preference.PreferenceKeys;
+import id.delta.bbm.utils.theme.ThemeManager;
 
 /**
  * Created by DELTALABS on 12/9/16.
@@ -30,14 +31,13 @@ public class Alaska extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        //Fitur Bahasa
+        Bahasa.init(Alaska.this, PreferenceKeys.KEY_BAHASA);
 
         new Runnable() {
 
             @Override
             public void run() {
-                //Fitur Bahasa
-                Bahasa.init(Alaska.this, PreferenceKeys.KEY_BAHASA);
-
                 registerActivityLifecycleCallbacks(CALLBACKS);
 
             }
@@ -54,7 +54,7 @@ public class Alaska extends MultiDexApplication {
     private static final ActivityLifecycleCallbacks CALLBACKS = new ActivityLifecycleCallbacks() {
         @Override
         public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-
+            ThemeManager.setKonfigurasi(activity);
         }
         @Override
         public void onActivityStarted(Activity activity) {}

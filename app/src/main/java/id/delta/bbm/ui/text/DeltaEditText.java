@@ -4,8 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.EditText;
 
-import com.bbm.ui.activities.InlineImageEditText;
-
 /**
  * Created by DELTALABS on 12/11/16.
  */

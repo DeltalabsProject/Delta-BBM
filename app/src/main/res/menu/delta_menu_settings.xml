@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/about"
+        android:title="Tentang Aplikasi" />
+
+    <item
+        android:id="@+id/report"
+        android:title="Laporkan Masalah" />
+
+    <item
+        android:id="@+id/share"
+        android:title="Bagikan BBM Delta" />
+
+    <item
+        android:id="@+id/donate"
+        android:title="Donasi" />
+
+    <item
+        android:id="@+id/restart"
+        android:title="Restore"
+        android:icon="@drawable/delta_ic_power"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/contributor"
+        android:title="Contributors"/>
+
+</menu>

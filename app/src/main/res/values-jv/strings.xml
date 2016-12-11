@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Delta BBM</string>
     <string name="chats">Siji loro telu papat limo enem pitu walu sanga sepuluh sewelas rolas telulas patbelas limolas</string>
+    <string name="pref_title_bahasa">Tempuh Bahasa</string>
+    <string name="pref_title_textstyle">Tempuh Bentuk Tulisan</string>
+    <string name="pref_title_theme">Tempuh Tema</string>
 </resources>

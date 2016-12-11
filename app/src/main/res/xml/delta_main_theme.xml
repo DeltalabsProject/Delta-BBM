@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <id.delta.bbm.bahasa.PreferenceBahasa
+        android:icon="@drawable/delta_ic_bahasa"
+        android:selectable="true"
+        android:enabled="true"
+        android:defaultValue="0"
+        android:key="key_delta_bahasa"
+        android:title="@string/pref_title_bahasa"
+        android:layout="@layout/delta_preference"
+        android:summary="%s"/>
+
+    <ListPreference
+        android:icon="@drawable/delta_ic_themes"
+        android:layout="@layout/delta_preference"
+        android:entries="@array/theme_labels"
+        android:title="@string/pref_title_theme"
+        android:key="key_delta_themes"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:entryValues="@array/theme_values" />
+
 </PreferenceScreen>

@@ -6,6 +6,13 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.bbm.bali.ui.main.fragment.FragmentChat;
 
+import id.delta.bbm.fragment.FragmentAvatar;
+import id.delta.bbm.fragment.FragmentMain;
+import id.delta.bbm.fragment.FragmentMessage;
+import id.delta.bbm.fragment.FragmentNotification;
+import id.delta.bbm.fragment.FragmentOther;
+import id.delta.bbm.fragment.FragmentPrivate;
+import id.delta.bbm.fragment.FragmentText;
 import id.delta.bbm.fragment.FragmentTheme;
 
 /**
@@ -26,10 +33,25 @@ public class SettingsAdapter extends FragmentStatePagerAdapter {
                 fragment=new FragmentTheme();
                 break;
             case 1:
-                fragment=new FragmentTheme();
+                fragment=new FragmentText();
                 break;
             case 2:
-                fragment=new FragmentTheme();
+                fragment=new FragmentMain();
+                break;
+            case 3:
+                fragment=new FragmentMessage();
+                break;
+            case 4:
+                fragment=new FragmentAvatar();
+                break;
+            case 5:
+                fragment=new FragmentNotification();
+                break;
+            case 6:
+                fragment=new FragmentPrivate();
+                break;
+            case 7:
+                fragment=new FragmentOther();
                 break;
         }
 
@@ -38,7 +60,7 @@ public class SettingsAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 8;
     }
 
     @Override
@@ -49,10 +71,25 @@ public class SettingsAdapter extends FragmentStatePagerAdapter {
                 title="THEME";
                 break;
             case 1:
-                title="COLOR";
+                title="TEXT";
                 break;
             case 2:
-                title="ABOUT";
+                title="MAIN";
+                break;
+            case 3:
+                title="MESSAGE";
+                break;
+            case 4:
+                title="AVATAR";
+                break;
+            case 5:
+                title="NOTIFICATION";
+                break;
+            case 6:
+                title="PRIVATE";
+                break;
+            case 7:
+                title="OTHER";
                 break;
         }
 

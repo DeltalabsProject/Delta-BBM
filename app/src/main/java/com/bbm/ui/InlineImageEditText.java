@@ -1,4 +1,4 @@
-package com.bbm.ui.activities;
+package com.bbm.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
