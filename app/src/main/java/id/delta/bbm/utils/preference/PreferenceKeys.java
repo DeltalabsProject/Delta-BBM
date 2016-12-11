@@ -7,6 +7,10 @@ public class PreferenceKeys {
 
     private PreferenceKeys(){}
 
+    // Bahasa
+    public static final String KEY_BAHASA = "key_delta_bahasa";
+
+
     // Avatar Keys
     public static final String KEY_BORDER = "key_delta_border";
     public static final String KEY_SHADOW = "key_delta_shadow";
