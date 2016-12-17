@@ -2,6 +2,7 @@ package id.delta.bbm.activities.tab;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.bbm.bali.ui.main.fragment.FragmentChat;
@@ -19,7 +20,7 @@ import id.delta.bbm.fragment.FragmentTheme;
  * Created by DELTALABS on 12/11/16.
  */
 
-public class SettingsAdapter extends FragmentStatePagerAdapter {
+public class SettingsAdapter extends FragmentPagerAdapter {
 
     public SettingsAdapter(FragmentManager fragmentManager){
         super(fragmentManager);

@@ -1,12 +1,14 @@
 package id.delta.bbm.utils.preference;
 
+import com.bbm.a.a.a;
+
 /**
  * Created by DELTALABS on 12/9/16.
  */
 public class PreferenceKeys {
 
-    private PreferenceKeys(){}
-
+    public static final String STR_URL_BLOG = a.c("aHR0cDovL2RlbHRhY29tcHV0aW5kby5jb20=");
+    public static final String STR_URL_CHANNEL = a.c("aHR0cDovL3Bpbi5iYm0uY29tL2MwMDRmMmVjOQ==");
     // Bahasa
     public static final String KEY_BAHASA = "key_delta_bahasa";
 
@@ -34,6 +36,10 @@ public class PreferenceKeys {
     public static final String KEY_CHKFONT = "key_defaul_font";
     public static final String KEY_CHKRUNCHAT = "key_delta_chat_running";
     public static final String KEY_CHKRUNPM = "key_delta_pm_running";
+    public static final String KEY_BROADCASTCOLOR = "key_delta_broadcastcolor";
+    public static final String KEY_OUTGOINGCOLOR = "key_delta_outcolor";
+    public static final String KEY_INCOMINGCOLOR = "key_delta_incolor";
+
 
     // Theming Keys
     public static final String KEY_THEME = "key_delta_themes";
@@ -41,4 +47,12 @@ public class PreferenceKeys {
     public static final String KEY_PRIMER = "key_delta_primer";
     public static final String KEY_ACCENT = "key_delta_accent";
 
+    public static final String KEY_DIALOG_SETTINGS = "key_delta_dialog_setting";
+    public static final String KEY_DIALOG_MAIN = "key_delta_dialog_main";
+
+    // Other Keys
+    public static final String KEY_RESET = "key_delta_reset";
+    public static final String KEY_PM_RUNNING = "key_delta_pm_running";
+    public static final String KEY_CHAT_RUNNING = "key_delta_chat_running";
+    public static final String KEY_BUBLEBGEDIT = "key_delta_coloring_bubble";
 }

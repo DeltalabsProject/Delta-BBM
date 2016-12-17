@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.bbm.Alaska;
 
@@ -28,8 +30,11 @@ public class ThemeManager {
       //  WindowUtils.setWindowBackground(activity);
       //  WindowUtils.setActivityAnimation(activity);
 
-        if (Build.VERSION.SDK_INT >= 21) {
-            activity.getWindow().setStatusBarColor(Color.BLACK);
+        //Coloring StatusBar Lolipop Up
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = activity.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(ColorManager.setWarnaPrimer());
         }
     }
 

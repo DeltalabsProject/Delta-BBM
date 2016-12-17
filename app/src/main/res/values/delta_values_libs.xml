@@ -5,6 +5,19 @@
     <dimen name="toolbar_elevation">3dp</dimen>
     <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
 
+    <!-- PromptDialog Theme -->
+    <style name="color_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <color name="color_dialog_gray">#ededf3</color>
+
     <!--Warna-->
     <color name="delta_amoled_dark">#ff212121</color>
     <color name="delta_red">#f44336</color>
@@ -62,5 +75,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string name="versi">DELTA BBM v3.8.0</string>
 
 </resources>

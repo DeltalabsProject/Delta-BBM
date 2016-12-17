@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <CheckBoxPreference
+        android:layout="@layout/delta_preference"
+        android:title="@string/pref_title_run_pm"
+        android:key="key_delta_pm_running"
+        android:widgetLayout="@layout/delta_preference_widget_switch"
+        android:defaultValue="false"
+        android:summaryOn="@string/pref_sum_enabled"
+        android:summaryOff="@string/pref_sum_disabled" />
+
+    <CheckBoxPreference
+        android:layout="@layout/delta_preference"
+        android:title="@string/pref_title_run_chat"
+        android:key="key_delta_chat_running"
+        android:widgetLayout="@layout/delta_preference_widget_switch"
+        android:defaultValue="false"
+        android:summaryOn="@string/pref_sum_enabled"
+        android:summaryOff="@string/pref_sum_disabled" />
+
     <ListPreference
         android:layout="@layout/delta_preference"
         android:entries="@array/typeface_labels"
@@ -9,5 +27,50 @@
         android:summary="%s"
         android:key="key_delta_bold"
         android:defaultValue="0"/>
+
+    <id.delta.bbm.preference.DeltaEditTextPreference
+        android:inputType="number"
+        android:title="@string/pref_title_textsize"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_textsizes"
+        android:summary="%1$s"
+        android:defaultValue="14" />
+
+    <CheckBoxPreference
+        android:layout="@layout/delta_preference"
+        android:title="@string/pref_title_textcolor"
+        android:key="key_delta_textcolor"
+        android:widgetLayout="@layout/delta_preference_widget_switch"
+        android:defaultValue="false"
+        android:summaryOn="@string/pref_sum_enabled"
+        android:summaryOff="@string/pref_sum_disabled" />
+
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff000000"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_generalcolor"
+        android:title="@string/pref_title_generalcolor"
+        android:summary="%s"/>
+
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff000000"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_primercolor"
+        android:title="@string/pref_title_primercolor"
+        android:summary="%s"/>
+
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff707070"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_secundercolor"
+        android:title="@string/pref_title_secondcolor"
+        android:summary="%s"/>
+
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff707070"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_datecolor"
+        android:title="@string/pref_title_datecolor"
+        android:summary="%s"/>
 
 </PreferenceScreen>

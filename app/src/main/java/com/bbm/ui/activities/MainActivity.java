@@ -10,12 +10,16 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 import com.bbm.bali.ui.main.a.e;
 import com.bbm.bali.ui.main.fragment.MainAdapter;
 
 import id.delta.bbm.R;
 import id.delta.bbm.activities.tab.SettingsActivity;
+import id.delta.bbm.utils.dialog.DialogUtils;
+import id.delta.bbm.utils.preference.PreferenceUtils;
+import id.delta.bbm.utils.theme.ColorManager;
 
 
 public class MainActivity extends e implements NavigationView.OnNavigationItemSelectedListener{
@@ -28,6 +32,7 @@ public class MainActivity extends e implements NavigationView.OnNavigationItemSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupView();
+        DialogUtils.showDialogMain(this);
     }
 
     private void setupView(){
@@ -41,6 +46,9 @@ public class MainActivity extends e implements NavigationView.OnNavigationItemSe
 
         final NavigationView navView = (NavigationView) findViewById(R.id.navigation_view);
         navView.setNavigationItemSelectedListener(this);
+
+        LinearLayout linearLayout = (LinearLayout)findViewById(PreferenceUtils.getID("linearlayout","id"));
+        linearLayout.setBackgroundColor(ColorManager.setWarnaPrimer());
 
         mPager = (ViewPager)findViewById(R.id.pager);
         mPager.setAdapter(new MainAdapter(getSupportFragmentManager()));
@@ -66,8 +74,10 @@ public class MainActivity extends e implements NavigationView.OnNavigationItemSe
                         break;
                     case R.id.nav_settings:
                         startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+                        MainActivity.this.finish();
                         break;
                     case R.id.nav_deltachannel:
+                        DialogUtils.showDialogAbout(MainActivity.this);
                         break;
                 }
             }

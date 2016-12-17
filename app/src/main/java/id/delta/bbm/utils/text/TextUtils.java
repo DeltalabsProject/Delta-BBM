@@ -36,13 +36,13 @@ public class TextUtils {
         textView.setMarqueeRepeatLimit(10000000);
         textView.setHorizontallyScrolling(true);
     }
-    public static void setRunningTextChat(Context context, TextView textView){
-        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
+    public static void setRunningTextChat(TextView textView){
+        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHAT_RUNNING, false)){
             setRunningText(textView);
         }
     }
-    public static void setRunningTextPM(Context context, TextView textView){
-        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
+    public static void setRunningTextPM(TextView textView){
+        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_PM_RUNNING, false)){
             setRunningText(textView);
         }
     }
@@ -90,6 +90,14 @@ public class TextUtils {
     }
 
 
+    public static int setWarnaNama(){
+
+        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
+            return PreferenceUtils.getInt(PreferenceKeys.KEY_NAMETEXT, ColorManager.warnaPrimerPutih);
+        }else {
+            return ColorManager.warnaPrimerPutih;
+        }
+    }
 
     public static int setWarnaStatus(){
         if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
@@ -238,4 +246,69 @@ public class TextUtils {
         return n;
     }
 
+    public static int setGeneralTextColor (){
+        int n = Integer.parseInt((String) PreferenceUtils.getString(PreferenceKeys.KEY_THEME, PreferenceKeys.DEFAULT_THEME));
+
+        if (n == 0){
+            return setGeneralHitam();
+        }
+        if (n == 1){
+            return setGeneralPutih();
+        }
+        if (n == 2){
+            return setGeneralPutih();
+        }
+        if (n == 3){
+            return setGeneralPutih();
+        }
+        if (n == 4){
+            return setGeneralPutih();
+        }
+        if (n == 5){
+            return setGeneralPutih();
+        }
+
+        return n;
+    }
+
+    public static int setEditTextColor (){
+        int n = Integer.parseInt((String) PreferenceUtils.getString(PreferenceKeys.KEY_THEME, PreferenceKeys.DEFAULT_THEME));
+
+        if (n == 0){
+            return setEditHitam();
+        }
+        if (n == 1){
+            return setEditPutih();
+        }
+        if (n == 2){
+            return setEditPutih();
+        }
+        if (n == 3){
+            return setEditPutih();
+        }
+        if (n == 4){
+            return setEditPutih();
+        }
+        if (n == 5){
+            return setEditPutih();
+        }
+
+        return n;
+    }
+
+    // Edit Text
+    public static int setEditHitam(){
+        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
+            return PreferenceUtils.getInt(PreferenceKeys.KEY_EDITTEXT, ColorManager.warnaPrimerHitam);
+        }else {
+            return ColorManager.warnaPrimerHitam;
+        }
+    }
+    public static int setEditPutih(){
+        if(PreferenceUtils.getBoolean(PreferenceKeys.KEY_CHKTEXTCOLOR, false)){
+            return PreferenceUtils.getInt(PreferenceKeys.KEY_EDITTEXT, ColorManager.warnaPrimerPutih);
+        }else {
+            return ColorManager.warnaPrimerPutih;
+        }
+    }
 }

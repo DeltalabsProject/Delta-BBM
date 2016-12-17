@@ -18,6 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?homeAsUpIndicator"
+            app:navigationContentDescription="@string/abc_action_bar_up_description"
             app:popupTheme="?toolbar_popup_theme"
             app:contentInsetStart="16dp"/>
 

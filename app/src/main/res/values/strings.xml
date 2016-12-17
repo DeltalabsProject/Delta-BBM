@@ -2,10 +2,30 @@
     <string name="app_name">Delta BBM</string>
     <string name="drawer_close" translatable="false">Close nav drawer</string>
     <string name="drawer_open" translatable="false">Open nav drawer</string>
-
     <string name="chats">One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen</string>
     <string name="packageName" translatable="false">id.delta.bbm</string>
+
+    <!-- Cukup dari sini -->
     <string name="pref_title_theme">Change Theme</string>
     <string name="pref_title_textstyle">Change Text Style</string>
     <string name="pref_title_bahasa">Change Language</string>
+    <string name="pref_title_reset">Restore Default Settings</string>
+    <string name="pref_sum_reset">The process canot be undone</string>
+    <string name="reset_content">"The process can not be undone
+All settings will reset
+Are you sure?"</string>
+    <string name="reset_ok">"I'm Sure"</string>
+    <string name="delta_settings">Delta Settings</string>
+    <string name="pref_sum_enabled">Enabled</string>
+    <string name="pref_sum_disabled">Disabled</string>
+    <string name="pref_title_primary">Primary Color</string>
+    <string name="pref_title_accent">Accent Color</string>
+    <string name="pref_title_textcolor">Change Text Color</string>
+    <string name="pref_title_run_pm">Running Text on PM</string>
+    <string name="pref_title_run_chat">Running Text on Chat Message</string>
+    <string name="pref_title_textsize">Change Text Size</string>
+    <string name="pref_title_generalcolor">General Text Color</string>
+    <string name="pref_title_primercolor">Primary Text Color</string>
+    <string name="pref_title_secondcolor">Second Text Color</string>
+    <string name="pref_title_datecolor" >Date Text Color</string>
 </resources>

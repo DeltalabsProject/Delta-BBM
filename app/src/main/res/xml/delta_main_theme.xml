@@ -21,4 +21,20 @@
         android:defaultValue="0"
         android:entryValues="@array/theme_values" />
 
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff0092cc"
+        android:icon="@drawable/delta_ic_primary"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_primer"
+        android:title="@string/pref_title_primary"
+        android:summary="%s"/>
+
+    <id.delta.bbm.ambilwarna.ColorPickerPreference
+        android:defaultValue="0xff0092cc"
+        android:icon="@drawable/delta_ic_accent"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_accent"
+        android:title="@string/pref_title_accent"
+        android:summary="%s"/>
+
 </PreferenceScreen>

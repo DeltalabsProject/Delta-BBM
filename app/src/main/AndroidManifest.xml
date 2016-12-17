@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.bbm.ui.activities.MainActivity"/>
-        <activity android:name=".activities.tab.SettingsActivity"/>
+        <activity android:label="@string/delta_settings" android:name=".activities.tab.SettingsActivity"/>
         <activity android:name="com.bbm.ui.activities.ViewProfileActivity"/>
     </application>
 

@@ -1,6 +1,7 @@
 package id.delta.bbm.ui.text;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -31,9 +32,10 @@ public class DeltaTextView extends TextView {
     }
 
     private void initText(){
-        setTextSize(TextUtils.setUkuranDateView());
+        setTextSize(TextUtils.setUkuranTextView());
         setTypeface(null, TextUtils.setTypeFaceRead());
-        setTextColor(TextUtils.setDateTextColor());
+        setTextColor(TextUtils.setGeneralTextColor());
+
         setInlineText();
         textTanggal();
     }
@@ -52,10 +54,132 @@ public class DeltaTextView extends TextView {
             tv = (TextView) findViewById(PreferenceUtils.getID("profile_status_message","id"));
             setTextColor(TextUtils.setWarnaStatus());
         }
+        if(getId() == PreferenceUtils.getID("profile_display_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("profile_display_name","id"));
+            setTextColor(TextUtils.setWarnaNama());
+            setTextSize(20);
+            setTypeface(null, Typeface.BOLD);
+        }
+
+        if(getId() == PreferenceUtils.getID("group_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("group_name","id"));
+            tv.setTextColor(ColorManager.warnaPrimerPutih);
+        }
+
+        if(getId() == PreferenceUtils.getID("actionbar_group_description","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("actionbar_group_description","id"));
+            tv.setTextColor(ColorManager.warnaPrimerPutih);
+        }
+
+        if(getId() == PreferenceUtils.getID("actionbar_status_message","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("actionbar_status_message","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+            TextUtils.setRunningTextPM(tv);
+        }
+
+        if(getId() == PreferenceUtils.getID("actionbar_group_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("actionbar_group_name","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+        }
+        if(getId() == PreferenceUtils.getID("actionbar_channel_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("actionbar_channel_name","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+        }
+        if(getId() == PreferenceUtils.getID("actionbar_channel_status","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("actionbar_channel_status","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+        }
+
+        if(getId() == PreferenceUtils.getID("contact_name_grid","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("contact_name_grid","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+        }
+
+        if(getId() == PreferenceUtils.getID("mpc_header_title","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("mpc_header_title","id"));
+            setTextColor(ColorManager.warnaPrimerPutih);
+        }
+
+        // List Item Chat //
+        if(getId() == PreferenceUtils.getID("chat_title","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("chat_title","id"));
+            setTextColor(TextUtils.setPrimerTextColor());
+        }
         if(getId() == PreferenceUtils.getID("chat_message","id")){
             tv = (TextView) findViewById(PreferenceUtils.getID("chat_message","id"));
             setTextColor(TextUtils.setSecondTextColor());
-            TextUtils.setRunningTextChat(this.getContext(), tv);
+            TextUtils.setRunningTextChat(tv);
+        }
+
+        // List Item Contact //
+        if(getId() == PreferenceUtils.getID("contact_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("contact_name","id"));
+            setTextColor(TextUtils.setPrimerTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("contact_message","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("contact_message","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+
+        // List Feed Title //
+        if(getId() == PreferenceUtils.getID("feeds_list_item_contacts_title_title","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("feeds_list_item_contacts_title_title","id"));
+            setTextColor(TextUtils.setPrimerTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("feeds_list_item_contacts_pre_body_image_text","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("feeds_list_item_contacts_pre_body_image_text","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("feeds_list_item_contacts_body_title","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("feeds_list_item_contacts_body_title","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("feeds_list_item_contacts_body_message","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("feeds_list_item_contacts_body_message","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("feeds_list_item_quote_text","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("feeds_list_item_quote_text","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+
+        // Komentar //
+        if(getId() == PreferenceUtils.getID("channel_post_commentor_name","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("channel_post_commentor_name","id"));
+            setTextColor(TextUtils.setPrimerTextColor());
+        }
+        if(getId() == PreferenceUtils.getID("channel_post_commentor_text","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("channel_post_commentor_text","id"));
+            setTextColor(TextUtils.setSecondTextColor());
+        }
+
+
+        if(getId() == PreferenceUtils.getID("message_input_text","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("message_input_text","id"));
+            setTextColor(TextUtils.setEditTextColor());
+        }
+
+        if(getId() == PreferenceUtils.getID("personal_status_bar_input_text","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("personal_status_bar_input_text","id"));
+            setTextColor(TextUtils.setEditTextColor());
+        }
+
+        if(getId() == PreferenceUtils.getID("location_timezone","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("location_timezone","id"));
+            setTextColor(TextUtils.setPrimerTextColor());
+        }
+
+
+        if(getId() == PreferenceUtils.getID("profile_display_description","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("profile_display_description","id"));
+            setTextColor(TextUtils.setWarnaNama());
+            setTextSize(20);
+            setTypeface(null, Typeface.BOLD);
+        }
+
+        if(getId() == PreferenceUtils.getID("call_title","id")){
+            tv = (TextView) findViewById(PreferenceUtils.getID("call_title","id"));
+            tv.setTextColor(ColorManager.warnaPrimerPutih);
         }
     }
 

@@ -10,13 +10,17 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
+import com.bbm.a.a.a;
 import com.bbm.bali.ui.main.a.e;
+import com.bbm.ui.activities.MainActivity;
 
 import id.delta.bbm.R;
+import id.delta.bbm.utils.dialog.DialogUtils;
 import id.delta.bbm.utils.preference.PreferenceUtils;
 import id.delta.bbm.utils.theme.ColorManager;
 
@@ -37,6 +41,12 @@ public class SettingsActivity extends e {
         //Toolbar
         Toolbar toolbar = (Toolbar)findViewById(PreferenceUtils.getID("toolbar","id"));
         setSupportActionBar(toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         //ViewPager
         ViewPager mPager = (ViewPager) findViewById(PreferenceUtils.getID("pager","id"));
@@ -52,12 +62,7 @@ public class SettingsActivity extends e {
         LinearLayout linearLayout = (LinearLayout)findViewById(PreferenceUtils.getID("linearlayout","id"));
         linearLayout.setBackgroundColor(ColorManager.setWarnaPrimer());
 
-        //Coloring StatusBar Lolipop Up
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(ColorManager.setWarnaPrimer());
-        }
+        DialogUtils.showDialogSettings(this);
     }
 
 
@@ -70,10 +75,10 @@ public class SettingsActivity extends e {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == PreferenceUtils.getID("about", "id")) {
-           // DialogUtils.showDialogAbout(this);
+           // PromtDialogUtils.showDialogAbout(this);
             return true;
         } else if (item.getItemId() == PreferenceUtils.getID("donate", "id")) {
-           // DialogUtils.showDialogDonasi(this);
+           // PromtDialogUtils.showDialogDonasi(this);
             return true;
         } else if (item.getItemId() == PreferenceUtils.getID("report", "id")) {
            // deltaReport();
@@ -89,5 +94,11 @@ public class SettingsActivity extends e {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, MainActivity.class));
+        this.finish();
     }
 }
