@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,6 @@ import android.webkit.WebViewClient;
 
 import com.bbm.bali.ui.main.a.h;
 
-import id.delta.bbm.R;
 import id.delta.bbm.utils.preference.PreferenceKeys;
 import id.delta.bbm.utils.preference.PreferenceUtils;
 
@@ -21,7 +19,7 @@ import id.delta.bbm.utils.preference.PreferenceUtils;
  * Created by DELTALABS on 12/9/16.
  */
 
-public class FragmentBlog extends h {
+public class FragmentUpdate extends h {
 
     String deltaUrl;
 
@@ -35,7 +33,7 @@ public class FragmentBlog extends h {
         webView.setWebViewClient(new DeltaWebClient());
 
         if (deltaUrl == null){
-            deltaUrl = PreferenceKeys.STR_URL_BLOG;
+            deltaUrl = PreferenceKeys.STR_URL_UPDATE;
         }
         webView.loadUrl(deltaUrl);
 
@@ -47,7 +45,7 @@ public class FragmentBlog extends h {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
-            if(Uri.parse(url).getHost().endsWith("deltacomputindo.com")) {
+            if(Uri.parse(url).getHost().endsWith("deltabbm.com")) {
                 return false;
             }
 

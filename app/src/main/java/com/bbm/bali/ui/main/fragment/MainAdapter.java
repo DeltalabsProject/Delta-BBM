@@ -2,13 +2,14 @@ package com.bbm.bali.ui.main.fragment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 /**
  * Created by DELTALABS on 12/9/16.
  */
 
-public class MainAdapter extends FragmentStatePagerAdapter {
+public class MainAdapter extends FragmentPagerAdapter {
 
     public MainAdapter(FragmentManager fragmentManager){
         super(fragmentManager);
@@ -25,10 +26,10 @@ public class MainAdapter extends FragmentStatePagerAdapter {
                 fragment=new FragmentBlog();
                 break;
             case 2:
-                fragment=new FragmentBlog();
+                fragment=new FragmentUpdate();
                 break;
             case 3:
-                fragment=new FragmentBlog();
+                fragment=new FragmentDeltalabsite();
                 break;
             case 4:
                 fragment=new FragmentBlog();

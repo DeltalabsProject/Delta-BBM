@@ -4,19 +4,15 @@
 
     <item
         android:id="@+id/about"
-        android:title="Tentang Aplikasi" />
+        android:title="@string/menu_about" />
 
     <item
         android:id="@+id/report"
-        android:title="Laporkan Masalah" />
+        android:title="@string/menu_report" />
 
     <item
         android:id="@+id/share"
-        android:title="Bagikan BBM Delta" />
-
-    <item
-        android:id="@+id/donate"
-        android:title="Donasi" />
+        android:title="@string/menu_share" />
 
     <item
         android:id="@+id/restart"
@@ -25,7 +21,7 @@
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/contributor"
-        android:title="Contributors"/>
+        android:id="@+id/reset"
+        android:title="@string/pref_title_reset"/>
 
 </menu>

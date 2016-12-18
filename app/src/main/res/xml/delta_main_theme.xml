@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <CheckBoxPreference
+        android:icon="@drawable/ic_delta_settings"
+        android:layout="@layout/delta_preference"
+        android:title="@string/pref_title_settings"
+        android:key="key_delta_settings_view"
+        android:widgetLayout="@layout/delta_preference_widget_switch"
+        android:defaultValue="true"
+        android:summary="@string/pref_sum_tab"/>
+
     <id.delta.bbm.bahasa.PreferenceBahasa
         android:icon="@drawable/delta_ic_bahasa"
         android:selectable="true"
@@ -36,5 +45,19 @@
         android:key="key_delta_accent"
         android:title="@string/pref_title_accent"
         android:summary="%s"/>
+
+    <Preference
+        android:icon="@drawable/delta_ic_power"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_restart"
+        android:title="@string/pref_title_restart"
+        android:summary="@string/pref_sum_restart"/>
+
+    <Preference
+        android:icon="@drawable/delta_ic_restore"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_reset"
+        android:title="@string/pref_title_reset"
+        android:summary="@string/pref_sum_reset"/>
 
 </PreferenceScreen>

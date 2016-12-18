@@ -1,4 +1,4 @@
-package id.delta.bbm.activities.tab;
+package id.delta.bbm.activities;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

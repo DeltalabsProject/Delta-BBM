@@ -6,4 +6,5 @@
     <string name="pref_title_bahasa">Ganti Bahasa</string>
     <string name="pref_title_textstyle">Ganti Bentuk Tulisan</string>
     <string name="pref_title_theme">Ganti Tema</string>
+    <string name="pref_sum_disabled"></string>
 </resources>

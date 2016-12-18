@@ -23,8 +23,7 @@ public class FragmentOther extends PreferenceFragment implements Preference.OnPr
     }
 
     private void setContent(){
-        Preference preference = findPreference(PreferenceKeys.KEY_RESET);
-        preference.setOnPreferenceClickListener(this);
+
     }
 
     @Override
@@ -34,9 +33,7 @@ public class FragmentOther extends PreferenceFragment implements Preference.OnPr
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
-        if (preference.getKey().equals(PreferenceKeys.KEY_RESET)) {
-            DialogUtils.showDialogReset(getActivity());
-        }
+
         return false;
     }
 }

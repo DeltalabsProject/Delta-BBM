@@ -8,6 +8,8 @@ import com.bbm.a.a.a;
 public class PreferenceKeys {
 
     public static final String STR_URL_BLOG = a.c("aHR0cDovL2RlbHRhY29tcHV0aW5kby5jb20=");
+    public static final String STR_URL_UPDATE = a.c("aHR0cDovL3d3dy5kZWx0YWJibS5jb20v");
+    public static final String STR_URL_DELTALABSITE = a.c("aHR0cDovL2RlbHRhbGFic2l0ZS5ibG9nc3BvdC5jby5pZC8=");
     public static final String STR_URL_CHANNEL = a.c("aHR0cDovL3Bpbi5iYm0uY29tL2MwMDRmMmVjOQ==");
     // Bahasa
     public static final String KEY_BAHASA = "key_delta_bahasa";
@@ -52,7 +54,14 @@ public class PreferenceKeys {
 
     // Other Keys
     public static final String KEY_RESET = "key_delta_reset";
+    public static final String KEY_RESTART = "key_delta_restart";
     public static final String KEY_PM_RUNNING = "key_delta_pm_running";
     public static final String KEY_CHAT_RUNNING = "key_delta_chat_running";
     public static final String KEY_BUBLEBGEDIT = "key_delta_coloring_bubble";
+    public static final String KEY_PROBLEMS = "key_delta_problem";
+
+
+
+    //Change Layout Keys
+    public static final String KEY_LAY_SETTINGS = "key_delta_settings_view";
 }

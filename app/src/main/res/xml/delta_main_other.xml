@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference
-        android:layout="@layout/delta_preference"
-        android:key="key_delta_reset"
-        android:title="@string/pref_title_reset"
-        android:summary="@string/pref_sum_reset"/>
+
 
 </PreferenceScreen>

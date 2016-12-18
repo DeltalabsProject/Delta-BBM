@@ -16,7 +16,7 @@ import com.bbm.bali.ui.main.a.e;
 import com.bbm.bali.ui.main.fragment.MainAdapter;
 
 import id.delta.bbm.R;
-import id.delta.bbm.activities.tab.SettingsActivity;
+import id.delta.bbm.activities.SettingsActivity;
 import id.delta.bbm.utils.dialog.DialogUtils;
 import id.delta.bbm.utils.preference.PreferenceUtils;
 import id.delta.bbm.utils.theme.ColorManager;
