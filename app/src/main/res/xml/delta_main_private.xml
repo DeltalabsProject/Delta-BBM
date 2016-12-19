@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <id.delta.bbm.preference.DeltaEditTextPreference
+        android:inputType="number"
+        android:title="@string/pref_title_lock"
+        android:layout="@layout/delta_preference"
+        android:key="key_delta_password_lock"
+        android:summary="%1$s"
+        android:defaultValue="" />
+
 </PreferenceScreen>

@@ -19,7 +19,12 @@ import com.bbm.Alaska;
 
 public class PreferenceUtils {
 
-    private PreferenceUtils (){}
+    private Context context;
+
+    public PreferenceUtils(Context cont)
+    {
+        context=cont;
+    }
 
     public static String PathData;
 
@@ -95,6 +100,36 @@ public class PreferenceUtils {
     public static void clear() {
         getEditor().clear().commit();
     }
+
+
+
+    // Another
+    public Boolean getSharedBoolean(String key)    {
+        return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(key, false);
+    }
+
+    public void setSharedBoolean(String key, Boolean value){
+        SharedPreferences.Editor editor=PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putBoolean(key, value);
+        editor.commit();
+    }
+    public void startNewActivity(Class<?> objClass){
+        ((Activity)context).startActivity(new Intent(context, objClass));
+    }
+
+    public void startAttachActivity(Class<?> objClass, String key, String str){
+        Intent intent=new Intent(context, objClass);
+        intent.putExtra(key, str);
+        ((Activity)context).startActivity(intent);
+    }
+
+    //------ Need Permission -----------------
+    // example: <service android:name="com.mod.flash.FlashLampService" android:exported="false"/>
+    public void startService(Class<?> objClass){
+        Intent intent = new Intent(context, objClass);
+        ((Activity)context).startService(intent);
+    }
+
 
 
 }

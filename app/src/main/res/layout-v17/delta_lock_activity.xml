@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:background="@null"
+            android:gravity="center"
+            android:hint="input your password here"
+            android:id="@+id/input_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:background="@drawable/delta_raised_button"
+                android:layout_width="fill_parent"
+                android:layout_height="40.dp">
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/delta_white"
+                    android:layout_centerVertical="true"
+                    android:text="SLIDE TO UNLOCK"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <id.delta.bbm.utils.lock.SlideUnlock
+                android:layout_gravity="center_vertical"
+                android:id="@+id/unlockButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="100"
+                android:enabled="false"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/delta_circle_slide"
+                android:thumbOffset="0dp"
+                android:indeterminate="false"
+                android:layout_centerInParent="true"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

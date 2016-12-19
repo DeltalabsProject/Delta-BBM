@@ -20,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp">
 
-        <TextView
+        <id.delta.bbm.ui.text.DeltaTextView
+            android:id="@+id/profile_display_description"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_width="match_parent"
@@ -29,9 +30,9 @@
             android:text="DELTALABS"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <TextView
+        <id.delta.bbm.ui.text.DeltaTextView
+            android:id="@+id/profile_status_message"
             android:textSize="14sp"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"

@@ -35,6 +35,12 @@
             android:icon="@drawable/ic_info"
             android:title="DELTALABS Channel" />
 
+        <item
+            android:id="@+id/nav_lock"
+            android:icon="@drawable/ic_lock"
+            android:title="Lock BBM" />
+
+
     </group>
 
 </menu>

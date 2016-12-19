@@ -14,6 +14,10 @@ public class PreferenceKeys {
     // Bahasa
     public static final String KEY_BAHASA = "key_delta_bahasa";
 
+    // Lock
+    public static final String KEY_VIEWLOCKER = "key_delta_viewlocker";
+    public static final String KEY_PASWORDLOCK = "key_delta_password_lock";
+
     // Avatar Keys
     public static final String KEY_BORDER = "key_delta_border";
     public static final String KEY_SHADOW = "key_delta_shadow";
@@ -30,17 +34,19 @@ public class PreferenceKeys {
     public static final String KEY_DATETEXT = "key_delta_datecolor";
     public static final String KEY_NAMETEXT = "key_delta_namecolor";
     public static final String KEY_EDITTEXT = "key_delta_editcolor";
+
     // Styling Text //
     public static final String KEY_UKURANTEXT = "key_delta_textsizes";
     public static final String KEY_TYPERFACE = "key_delta_bold";
     public static final String DEFAULT_TYPERFACE = "0";
     public static final String KEY_CUSTOMFONT = "key_delta_customfont";
     public static final String KEY_CHKFONT = "key_defaul_font";
-    public static final String KEY_CHKRUNCHAT = "key_delta_chat_running";
-    public static final String KEY_CHKRUNPM = "key_delta_pm_running";
+    public static final String KEY_PM_RUNNING = "key_delta_pm_running";
+    public static final String KEY_CHAT_RUNNING = "key_delta_chat_running";
     public static final String KEY_BROADCASTCOLOR = "key_delta_broadcastcolor";
     public static final String KEY_OUTGOINGCOLOR = "key_delta_outcolor";
     public static final String KEY_INCOMINGCOLOR = "key_delta_incolor";
+    public static final String KEY_TEXT_LINK = "key_delta_link_color";
 
 
     // Theming Keys
@@ -55,8 +61,6 @@ public class PreferenceKeys {
     // Other Keys
     public static final String KEY_RESET = "key_delta_reset";
     public static final String KEY_RESTART = "key_delta_restart";
-    public static final String KEY_PM_RUNNING = "key_delta_pm_running";
-    public static final String KEY_CHAT_RUNNING = "key_delta_chat_running";
     public static final String KEY_BUBLEBGEDIT = "key_delta_coloring_bubble";
     public static final String KEY_PROBLEMS = "key_delta_problem";
 

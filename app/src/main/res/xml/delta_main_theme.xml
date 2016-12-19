@@ -39,7 +39,7 @@
         android:summary="%s"/>
 
     <id.delta.bbm.ambilwarna.ColorPickerPreference
-        android:defaultValue="0xff0092cc"
+        android:defaultValue="0xff006064"
         android:icon="@drawable/delta_ic_accent"
         android:layout="@layout/delta_preference"
         android:key="key_delta_accent"

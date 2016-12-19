@@ -78,4 +78,32 @@
 
     <string name="versi">DELTA BBM v4.0.0</string>
 
+    <declare-styleable name="IconListPreference">
+        <attr name="prefIcon" format="reference" />
+        <attr name="updateIcon" format="boolean" />
+        <attr name="iconSide" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="start" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+        <attr name="entryIcons" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SlideToUnlockView">
+        <attr name="text" format="string"/>
+        <attr name="thumb" format="integer"/>
+        <attr name="tracks" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="slideButton">
+
+        <attr name="orientation" >
+            <!-- the switch moves only on the x-axis(horizontally) -->
+            <enum name="horizontal" value="0" />
+            <!-- the switch moves only on the y-axis(vertically) -->
+            <enum name="vertical" value="1" />
+        </attr>
+
+    </declare-styleable>
+
 </resources>
